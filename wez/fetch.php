@@ -22,7 +22,7 @@ $result = mysqli_query($con, $query);
 if(mysqli_num_rows($result) > 0)
 {
 	$output .= '<div class="table-responsive">
-					<table class="table table bordered">
+					<table class="table table-striped table-dark">
 						<tr>
 						    <th> id</th>
 							<th> Name</th>
