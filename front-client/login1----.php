@@ -14,14 +14,17 @@ if(isset($_POST['log1'])){
     $email=$_POST['email'];
     $password=$_POST['password'];
     
-    $sql="select * from client where email='".$email."AND password='".$password."' limit 1";
+    $sql="select * from client where email='".$email."'AND password='".$password."' limit 1";
     
     $result = mysqli_query($conn, $sql);
-    
-    if(!$result->num_rows > 0){
+    $row=mysqli_fetch_array($result);
+    $rev=$row['role'];
+    echo $rev;
+    if($result->num_rows > 0){
         echo " You Have Successfully Logged in";
         $_SESSION['e']=$email;
 		$_SESSION['p']=$password;  
+    $_SESSION['d']=$rev;
 		header('Location: my-account.php');
         exit();
     }

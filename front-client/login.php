@@ -17,13 +17,34 @@ if(isset($_POST['email'])){
     $sql="SELECT * FROM client WHERE email='$email' and password='$password'";
     
     $result = mysqli_query($conn,$sql);
+    $row=mysqli_fetch_array($result);
+    $rev=$row[9];
+    $firt=$row[1];
+    $last=$row[2];
+    $ter="admin";
     if($result->num_rows > 0){
+       
+        if(strcmp($rev, $ter) === 0){ 
         echo " You Have Successfully Logged in";
-        
+       
         $_SESSION['e']=$_POST['email'];
 		$_SESSION['p']=$_POST['password'];
-		header("Location: my-account.php");
-        exit();
+        $_SESSION['d']=$rev;
+        $_SESSION['f']=$firt;
+        $_SESSION['l']=$last;
+        
+		header("Location: \github\back-admin\dashboard.php");
+    }
+        else{
+            echo " You Have Successfully Logged in";
+       
+            $_SESSION['e']=$_POST['email'];
+            $_SESSION['p']=$_POST['password'];
+            $_SESSION['d']=$rev;
+            $_SESSION['f']=$firt;
+            $_SESSION['l']=$last;
+            header("Location: my-account.php");
+        }
     }
     else{
         echo " You Have Entered Incorrect Password";

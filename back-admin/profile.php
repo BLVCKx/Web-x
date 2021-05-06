@@ -250,32 +250,32 @@ try {
                     <div class="col-lg-8 col-xlg-9 col-md-12">
                         <div class="card">
                             <div class="card-body">
-                            <form action="" method="POST">
+                            <form action="test.php" method="POST">
                                 <form class="form-horizontal form-material">
                                 <div class="form-group mb-4">
                                         <label class="col-md-12 p-0">Cin</label>
                                         <div class="col-md-12 border-bottom p-0">
                                             <input type="text" placeholder="Cin"
-                                                class="form-control p-0 border-0" name="cin" value="<?php echo $row->cin;?>">
+                                                class="form-control p-0 border-0" name="cin3" value="<?php echo $row->cin;?>">
                                             </div>
                                 </div>
                                     <div class="form-group mb-4">
                                         <label class="col-md-12 p-0">First Name</label>
                                         <div class="col-md-12 border-bottom p-0">
                                             <input type="text" placeholder="First Name"
-                                                class="form-control p-0 border-0"name="first_name" value="<?php echo $row->first_name;?>"> </div>
+                                                class="form-control p-0 border-0"name="first_name3" value="<?php echo $row->first_name;?>"> </div>
                                     </div>
                                     <div class="form-group mb-4">
                                         <label class="col-md-12 p-0">Last Name</label>
                                         <div class="col-md-12 border-bottom p-0">
                                             <input type="text" placeholder="Johnathan Doe"
-                                                class="form-control p-0 border-0" name="last_name" value="<?php echo $row->last_name;?>"> </div>
+                                                class="form-control p-0 border-0" name="last_name3" value="<?php echo $row->last_name;?>"> </div>
                                     </div>
                                     <div class="form-group mb-4">
-                                        <label for="example-email" class="col-md-12 p-0"name="email" >Email</label>
+                                        <label for="example-email" class="col-md-12 p-0" >Email</label>
                                         <div class="col-md-12 border-bottom p-0">
                                             <input type="email" placeholder="johnathan@admin.com"
-                                                class="form-control p-0 border-0" name="email"
+                                                class="form-control p-0 border-0" name="email3"
                                                 id="example-email" value="<?php echo $row->email;?>">
                                         </div>
                                     </div>
@@ -284,7 +284,21 @@ try {
                                         <label class="col-md-12 p-0">Phone No</label>
                                         <div class="col-md-12 border-bottom p-0">
                                             <input type="text" placeholder="123 456 7890"
-                                                class="form-control p-0 border-0"name="phone" value="<?php echo $row->phone;?>" >
+                                                class="form-control p-0 border-0"name="phone3" value="<?php echo $row->phone;?>" >
+                                        </div>
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <label class="col-md-12 p-0">name profession</label>
+                                        <div class="col-md-12 border-bottom p-0">
+                                            <input type="text" placeholder="profession"
+                                                class="form-control p-0 border-0"name="name3" value="<?php echo $row->name;?>" >
+                                        </div>
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <label class="col-md-12 p-0">role</label>
+                                        <div class="col-md-12 border-bottom p-0">
+                                            <input type="text" placeholder="role"
+                                                class="form-control p-0 border-0"name="role3" value="<?php echo $row->role;?>" >
                                         </div>
                                     </div>
                                     

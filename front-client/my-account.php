@@ -405,7 +405,7 @@ $result = mysqli_query($conn, $sql);}
 }
 	  ?>
                                             <div class="welcome">
-                                                <p>Hello, <strong><?php echo $_SESSION['e'];?></strong> (If Not <strong><?php echo $_SESSION['e'];?> !</strong><a href="login.php" class="logout"> Logout</a>)</p>
+                                                <p>Hello, <strong><?php echo $_SESSION['f'];?> <span></span> <?php echo $_SESSION['l'];?></strong> (If Not <strong><?php echo $_SESSION['f'];?> <span></span> <?php echo $_SESSION['l'];?> !</strong><a href="login.php" class="logout"> Logout</a>)</p>
                                             </div>
                                             <p class="mb-0">From your account dashboard. you can easily check & view your recent orders, manage your shipping and billing addresses and edit your password and account details.</p>
                                         </div>

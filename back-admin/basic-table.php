@@ -16,6 +16,7 @@ $resultt = mysqli_query($conn, $ssql);
 //$num_rows = mysqli_num_rows($result);
 if (mysqli_num_rows($resultt) > 0) {
 // output data of each row
+
  ?>
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
@@ -32,6 +33,7 @@ if (mysqli_num_rows($resultt) > 0) {
     <meta name="robots" content="noindex,nofollow">
     <title>Ample Admin Lite Template by WrapPixel</title>
     <link rel="canonical" href="https://www.wrappixel.com/templates/ample-admin-lite/" />
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="plugins/images/favicon.png">
     <!-- Custom CSS -->
@@ -244,6 +246,7 @@ if (mysqli_num_rows($resultt) > 0) {
                                             <th class="border-top-0">Phone</th>
                                             <th class="border-top-0">Password</th>
                                             <th class="border-top-0">Name profession</th>
+                                            <th class="border-top-0">role</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -272,6 +275,9 @@ if (mysqli_num_rows($resultt) > 0) {
                                     </td>
                                     <td>
                                     <?php echo $row['name']; ?>
+                                    </td>
+                                    <td>
+                                    <?php echo $row['role']; ?>
                                     </td>
                                     <td>
                                     <a href="delete.php?edit=<?= $row['id']; ?>"  class="btn btn-info" >Edit</a>                    
@@ -339,6 +345,51 @@ if (mysqli_num_rows($resultt) > 0) {
                 </div>
                 <!-- ============================================================== -->
                 <!-- End PAge Content -->
+                  <!-- Start Page Content -->
+                <!-- ============================================================== -->
+              
+                <div class="row">
+                  
+                            
+                <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+            ['Name profession ', 'number of agents'],
+          
+          
+        <?php
+        $querys = "SELECT * from profession";
+        $exec = mysqli_query($conn,$querys);
+          while($rx = mysqli_fetch_array($exec))
+          {
+            echo "['".$rx['name']."',".$rx['nb_agents']."],";
+          }
+          
+          ?>  
+        ]);
+
+        var options = {
+          chart: {
+            title: 'static of profession per number of agents',
+            subtitle: 'name profession, number of agents',
+          }
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }
+    </script>   
+<div id="columnchart_material" style="width: 800px; height: 500px;"></div>
+
+                            
+                     
+                </div>
+                <!-- ============================================================== -->
+                <!-- End PAge Content -->
                 <!-- ============================================================== -->
                 <!-- ============================================================== -->
                 <!-- Right sidebar -->
@@ -371,6 +422,7 @@ if (mysqli_num_rows($resultt) > 0) {
     <!-- ============================================================== -->
     <!-- All Jquery -->
     <!-- ============================================================== -->
+ 
     <script src="plugins/bower_components/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap tether Core JavaScript -->
     <script src="bootstrap/dist/js/bootstrap.bundle.min.js"></script>

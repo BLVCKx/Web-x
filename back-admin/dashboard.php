@@ -1,4 +1,5 @@
 <?php
+session_start();
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -114,7 +115,7 @@ if (mysqli_num_rows($result) > 0) {
                         <li>
                             <a class="profile-pic" href="#">
                                 <img src="plugins/images/users/varun.jpg" alt="user-img" width="36"
-                                    class="img-circle"><span class="text-white font-medium">Steave</span></a>
+                                    class="img-circle"><span class="text-white font-medium"><?php echo $_SESSION['f'];?> <span></span> <?php echo $_SESSION['l'];?></span></a>
                         </li>
                         <!-- ============================================================== -->
                         <!-- User profile and search -->
@@ -240,6 +241,7 @@ if (mysqli_num_rows($result) > 0) {
                                             <th class="border-top-0">Phone</th>
                                             <th class="border-top-0">Password</th>
                                             <th class="border-top-0">Name profession</th>
+                                            <th class="border-top-0">role</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -268,6 +270,9 @@ if (mysqli_num_rows($result) > 0) {
                                     </td>
                                     <td>
                                     <?php echo $row['name']; ?>
+                                    </td>
+                                    <td>
+                                    <?php echo $row['role']; ?>
                                     </td>
                                     <td>
                                     <a href="delete.php?edit=<?= $row['id']; ?>"  class="btn btn-info" >Edit</a>                    
