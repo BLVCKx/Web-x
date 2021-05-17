@@ -2,6 +2,7 @@
 
 
 
+
 <?php
 
     include "logic.php";
@@ -412,6 +413,14 @@
 <?php } ?>    
 
 <a href="index.php" class="btn btn-outline-success my-3">Go Back</a>
+
+        <button onclick="window.print();" class="btn btn-primary" id="print-btn">Print</button><br>
+      
+      <br>
+
+
+
+
 </div>
 
 <!-- Bootstrap JS -->
