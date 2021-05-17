@@ -180,7 +180,7 @@
                                     <li class="has-children">
                                         <a href="#">Blog <i class="fa fa-angle-down"></i></a>
                                         <ul class="sub-menu">
-                                            <li><a href="blog.html">Blog</a></li>
+                                            <li><a href="index.php">Blog</a></li>
                                             <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
                                             <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
                                             <li><a href="blog-details.html">Blog Details</a></li>
@@ -496,7 +496,8 @@
 		    <a href="read.php" class="btn btn-warning">View</a>
             
             <a href="index2.php" class="btn btn-success">send an email</a>
-
+            <a href="rechercher.php" class="btn btn-warning">Rechercher</a>
+            <a href="add_rate.php" class="btn btn-primary">Rate</a>
 			</center>
 	    </form>
 	</div>
@@ -826,3 +827,4 @@
 </body>
 
 </html>
+
