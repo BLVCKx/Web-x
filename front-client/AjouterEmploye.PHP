@@ -53,10 +53,6 @@ $token=md5(rand());
 			$result = mysqli_query($conn, $sql);
 			$result = mysqli_query($conn, $ssql);
 			if ($result) {
-				$to = "jean@example.com, michel@example.com";
-   
-				mail($to,"Sujet","Votre message");
-				//sendemail_verify("$first_name","$email","$token");
 				echo "<script>alert('Wow! User Registration Completed.')</script>"; 
 				header('Location: login.php');
 				$username = "";

@@ -80,7 +80,7 @@ include_once 'ajouterprofession.php';
                     <!-- Header Top Message Start -->
                     <div class="col-md-12 col-lg-6 text-lg-start text-center">
                         <div class="header-top-msg-wrapper">
-                            <p class="header-top-message">Welcome to Toyqo baby toys online store</p>
+                        <p class="header-top-message">Welcome to Firma online store</p>
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 text-end d-none d-lg-block">
@@ -121,118 +121,51 @@ include_once 'ajouterprofession.php';
                         <!-- Header Logo Start -->
                         <div class="col-md-6 col-lg-3 col-xl-2 col-6">
                             <div class="header-logo">
-                                <a href="register.php"><img src="assets/images/logo/logo2.png" alt="Site Logo" /></a>
+                                <a href="../index.php"><img src="../images/Asset1.png" alt="Site Logo" style="width: 70%"  /></a>
                             </div>
                         </div>
                         <!-- Header Logo End -->
 
                         <!-- Header Menu Start -->
                         <div class="col-lg-6 d-none d-lg-block">
+
                             <div class="main-menu">
                                 <ul>
                                     <li class="has-children">
-                                        <a href="#">Home <i class="fa fa-angle-down"></i></a>
-                                        <ul class="sub-menu">
-                                            <li><a href="index.html">Home 1</a></li>
-                                            <li><a href="index-2.html">Home 2</a></li>
-                                            <li><a href="index-3.html">Home 3</a></li>
-                                        </ul>
+                                        <a href="../index.php">Home </a>
                                     </li>
                                     <li class="has-children position-static">
                                         <a href="#">Shop <i class="fa fa-angle-down"></i></a>
-                                        <ul class="mega-menu row">
-                                            <li class="col-3">
-                                                <h4 class="mega-menu-title">Shop Layout</h4>
-                                                <ul class="mb-n2">
-                                                    <li><a href="shop.html">Shop Grid</a></li>
-                                                    <li><a href="shop-left-sidebar.html">Left Sidebar</a></li>
-                                                    <li><a href="shop-right-sidebar.html">Right Sidebar</a></li>
-                                                    <li><a href="shop-list-fullwidth.html">List Fullwidth</a></li>
-                                                    <li><a href="shop-list-left-sidebar.html">List Left Sidebar</a></li>
-                                                    <li><a href="shop-list-right-sidebar.html">List Right Sidebar</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="col-3">
-                                                <h4 class="mega-menu-title">Product Layout</h4>
-                                                <ul class="mb-n2">
-                                                    <li><a href="single-product.html">Single Product</a></li>
-                                                    <li><a href="single-product-sale.html">Single Product Sale</a></li>
-                                                    <li><a href="single-product-group.html">Single Product Group</a></li>
-                                                    <li><a href="single-product-normal.html">Single Product Normal</a></li>
-                                                    <li><a href="single-product-affiliate.html">Single Product Affiliate</a></li>
-                                                    <li><a href="single-product-slider.html">Single Product Slider</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="col-3">
-                                                <h4 class="mega-menu-title">Product Layout</h4>
-                                                <ul class="mb-n2">
-                                                    <li><a href="single-product-gallery-left.html">Gallery Left</a></li>
-                                                    <li><a href="single-product-gallery-right.html">Gallery Right</a></li>
-                                                    <li><a href="single-product-tab-style-left.html">Tab Style Left</a></li>
-                                                    <li><a href="single-product-tab-style-right.html">Tab Style Right</a></li>
-                                                    <li><a href="single-product-sticky-left.html">Sticky Left</a></li>
-                                                    <li><a href="single-product-sticky-right.html">Sticky Right</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="col-3">
-                                                <h4 class="mega-menu-title">Other Pages</h4>
-                                                <ul class="mb-n2">
-                                                    <li><a href="my-account.html">My Account</a></li>
-                                                    <li><a href="login.html">Loging | Register</a></li>
-                                                    <li><a href="wishlist.html">Wishlist</a></li>
-                                                    <li><a href="cart.html">Cart</a></li>
-                                                    <li><a href="checkout.html">Checkout</a></li>
-                                                    <li><a href="compare.html">Compare</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="has-children">
-                                        <a href="#">Pages <i class="fa fa-angle-down"></i></a>
                                         <ul class="sub-menu">
-                                            <li><a href="about.html">About Us</a></li>
-                                            <li><a href="contact.html">Contact Us</a></li>
-                                            <li><a href="error-404.html">Error 404</a></li>
-                                            <li><a href="faq.html">FAQ</a></li>
-                                            <li><a href="login.html">Login</a></li>
-                                            <li><a href="register.html">Register</a></li>
+                                        <li><a href="../wez/shop.php">shop</a></li>
+                                            <li><a href="index-2.html">shop</a></li>         
                                         </ul>
                                     </li>
-                                    <li class="has-children">
-                                        <a href="#">Blog <i class="fa fa-angle-down"></i></a>
-                                        <ul class="sub-menu">
-                                            <li><a href="blog.html">Blog</a></li>
-                                            <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-                                            <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-                                            <li><a href="blog-details.html">Blog Details</a></li>
-                                            <li><a href="blog-details-sidebar.html">Blog Details Sidebar</a></li>
-                                        </ul>
-                                    </li>
+                                
+                                    
                                     <li><a href="about.html">About</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="../Web-x-GestionContact/index.php">Contact</a></li>
+                                    <li><a href="../nessim.php">Veterinary</a></li>
                                 </ul>
                             </div>
-                        </div>
+
+                            </div>
                         <!-- Header Menu End -->
 
                         <!-- Header Action Start -->
                         <div class="col-md-6 col-lg-3 col-xl-4 col-6 justify-content-end">
                             <div class="header-actions">
-                                <a href="javascript:void(0)" class="header-action-btn header-action-btn-search d-none d-lg-block"><i class="pe-7s-search"></i></a>
+                               
                                 <div class="dropdown-user d-none d-lg-block">
                                     <a href="javascript:void(0)" class="header-action-btn"><i class="pe-7s-user"></i></a>
                                     <ul class="dropdown-menu-user">
-                                        <li><a class="dropdown-item" href="login.html">Login</a></li>
-                                        <li><a class="dropdown-item" href="register.html">Register</a></li>
+                                        <li><a class="dropdown-item" href="../front-client/login.php">login</a></li>
+                                        <li><a class="dropdown-item" href="../front-client/register.php">register</a></li>
+                                        
                                     </ul>
                                 </div>
-                                <a href="wishlist.html" class="header-action-btn header-action-btn-wishlist">
-                                    <i class="pe-7s-like"></i>
-                                </a>
-                                <a href="javascript:void(0)" class="header-action-btn header-action-btn-cart">
-                                    <i class="pe-7s-cart"></i>
-                                    <span class="header-action-num">3</span>
-                                </a>
+                              
+                                
                                 <!-- Mobile Menu Hambarger Action Button Start -->
                                 <a href="javascript:void(0)" class="header-action-btn header-action-btn-menu d-lg-none d-md-block">
                                     <i class="fa fa-bars"></i>
@@ -534,12 +467,12 @@ include_once 'ajouterprofession.php';
         <!-- Footer Top End -->
 
         <!-- Footer Bottom Start -->
-        <div class="footer-bottom bg-secondary pt-4 pb-4">
+        <div class="footer-bottom bg-warning pt-4 pb-4">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-12 text-center">
                         <div class="copyright-content">
-                            <p class="mb-0">© 2021 <strong>Toyqo </strong> Made with <i class="fa fa-heart text-danger"></i> by <a href="https://hasthemes.com/">HasThemes.</a></p>
+                        <p class="mb-0">© 2021 <strong>Firma </strong> Made with <i class="fa fa-heart text-danger"></i> by <a href="https://web-x.com/">Web-x.</a></p>
                         </div>
                     </div>
                 </div>
